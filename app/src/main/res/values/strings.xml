@@ -1,0 +1,85 @@
+<resources>
+    <string name="app_name">Magneto</string>
+
+    <string name="MainActivity_extras">-|- Extras -|-</string>
+
+    <string name="IdentificationExampleActivity_title">Identification</string>
+    <string name="IdentificationExampleActivity_description">
+        Choose a position close enough to the compass sensor, called the guessing position.
+        Place three different magnets on the guessing position, one at a time.
+        For each of them, tap the right name to store the sensed magnitude.
+        Once all the magnitudes have been stores, place one of the magnets in the guessing position.
+        The activity will guess which one you put.</string>
+    <string name="IdentificationExampleActivity_rectangle">Rectangle</string>
+    <string name="IdentificationExampleActivity_circle">Circle</string>
+    <string name="IdentificationExampleActivity_cylinder">Cylinder</string>
+
+    <string name="PositionExampleActivity_title">Position</string>
+    <string name="PositionExampleActivity_description">
+        For this activity we used a common switch. We embedded a magnet in the switch, so that when
+        switched the magnet changes position. Place the switch in its final position.
+        Tap on the "off" and "on" buttons when the switch is in the corresponding state to store
+        the magnetic field sensed along the axes. As soon as you stored both of them, the activity starts.
+        Modify the threshold if the test does not give a correct result.</string>
+    <string name="PositionExampleActivity_on">ON</string>
+    <string name="PositionExampleActivity_off">OFF</string>
+
+    <string name="LinearMotionExampleActivity_title">Linear Movement</string>
+    <string name="LinearMotionExampleActivity_description">Place the slider close to the compass.
+        Remember that both the device and the slider have to be still for this activity to work.
+        Put the magnet on one end of the straight line and press the corresponding button to store
+        the magnitude sensed by the device in that point. Repeat the process for the other end.
+        An optimal position of the slider is one where the magnetic field sensed continually
+        increases or decrease (read the documentation for more information).</string>
+    <string name="LinearMotionExampleActivity_leftEnd">Left/Up End</string>
+    <string name="LinearMotionExampleActivity_rightEnd">Right/Down End</string>
+
+    <string name="VirtualTapExampleActivity_title">Virtual Tap</string>
+    <string name="VirtualTapExampleActivity_description">Choose a position around the compass for
+        the magnet. Tap the start button. Flip the magnet in order to change the image shown.
+        It is possible to change the position of the magnet during the activity. Depending on the
+        positions, most of the times everything will work as expected.</string>
+    <string name="VirtualTapExampleActivity_startDetection">Start Detecting Virtual Tap(s)</string>
+
+    <string name="RadialPositionExampleActivity_title">Radial Position</string>
+    <string name="RadialPositionExampleActivity_description">While you move a magnet around the
+        compass sensor, you can see a red dot representing its position on a circle. If the red
+        dot is in an incorrect position, simply flip the magnet to change the side it faces the
+        device. To track its distance from the sensor, store the magnetic field sensed when the
+        magnet is far from the phone and it is right over the compass.</string>
+    <string name="RadialPositionExampleActivity_setOverCompassValue">Over Compass</string>
+    <string name="RadialPositionExampleActivity_setFarFromCompass">Far From Device</string>
+
+    <string name="RapidChangesExampleActivity_title">Rapid Changes</string>
+    <string name="RapidChangesExampleActivity_description">The activity detects rapid changes
+        of the magnetic field, usually a consequence of flip-like actions and fast movements of
+        a magnet nearby the compass sensor. A low and high threshold are defined. When the sensed
+        high-pass filtered euclidean norm of the magnetic field is higher than the high threshold, a
+        rapid change in the magnetic field is detected. In order to detect a new rapid change, the
+        sensed euclidean norm should fall below the low threshold and become higher than the high
+        one. The thresholds have to be chosen carefully, , they are not universal and depend on the
+        strength of the magnet, how close it is to the sensor and how fast the field changes in
+        relation to the magnet movement.</string>
+    <string name="RapidChangesExampleActivity_setLowThreshold">Set Low</string>
+    <string name="RapidChangesExampleActivity_setHighThreshold">Set High</string>
+    <string name="RapidChangesExampleActivity_resetThreshold">Reset Threshold</string>
+    <string name="RapidChangesExampleActivity_numberOfTaps">Number of Taps Detected: </string>
+
+    <string name="DisplaySensorDataActivity_title">Display Sensor Data</string>
+    <string name="DisplaySensorDataActivity_description">Unit of Measurement: μT</string>
+
+    <string name="CollectSensorDataActivity_title">Collect Sensor Data</string>
+    <string name="CollectSensorDataActivity_description">The activity can be used to store
+        sensed values of the magnetic field (for example while using a slider, you can save
+        the magnetic field values in some equidistant points). Choose a number from the picker,
+        tap on "set Number of Points", then tap on "Record a Position" to temporary store the
+        sensed value. If you want to update a previously stored value, simply tap on it to update
+        the temporary stored value. To save all the values as CSV file in memory, simply tap on
+        "Save as CSV". \n Recorded points appear below.</string>
+    <string name="CollectSensorDataActivity_recordPosition">Record a \n Position</string>
+    <string name="CollectSensorDataActivity_setNumberOfPoints">Set Number \n of Points</string>
+    <string name="CollectSensorDataActivity_saveToMemoryAsCsv">Store as \n CSV file</string>
+
+    <string name="RadialCubeActivity_title">Radial Cube</string>
+
+</resources>

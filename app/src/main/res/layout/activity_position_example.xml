@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="unipi.luk3s.magnetotest.PositionExampleActivity">
+
+    <TextView
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/PositionExampleActivity_textView_currentReadings"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="@string/PositionExampleActivity_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/PositionExampleActivity_textView_description"
+        android:layout_below="@+id/PositionExampleActivity_textView_currentReadings" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/PositionExampleActivity_textView_description"
+        android:id="@+id/buttons_container_linear_layout">
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/PositionExampleActivity_on"
+            android:id="@+id/PositionExampleActivity_button_on"
+            android:layout_weight="1"
+            android:onClick="storeMagneticField"/>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/PositionExampleActivity_off"
+            android:id="@+id/PositionExampleActivity_button_off"
+            android:editable="false"
+            android:layout_weight="1"
+            android:onClick="storeMagneticField"/>
+
+    </LinearLayout>
+
+    <NumberPicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/PositionExampleActivity_numberPicker_threshold"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:descendantFocusability="blocksDescendants"
+        android:layout_below="@+id/buttons_container_linear_layout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="40dp" />
+
+    <View
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@android:color/darker_gray"
+        android:id="@+id/PositionExampleActivity_view_state"
+        android:layout_alignTop="@+id/PositionExampleActivity_numberPicker_threshold"
+        android:layout_alignRight="@+id/buttons_container_linear_layout"
+        android:layout_alignEnd="@+id/buttons_container_linear_layout" />
+
+</RelativeLayout>

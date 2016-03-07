@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="unipi.luk3s.magnetotest.VirtualTapExampleActivity">
+
+    <TextView
+        android:text="@string/VirtualTapExampleActivity_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/VirtualTapExampleActivity_view_description"
+        android:layout_below="@+id/VirtualTapExampleActivity_textView_angle"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/VirtualTapExampleActivity_startDetection"
+        android:id="@+id/VirtualTapExampleActivity_button_start"
+        android:onClick="startDetectingVirtualTap"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Azimuth: ?"
+        android:id="@+id/VirtualTapExampleActivity_textView_angle"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:src="@drawable/guessing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/VirtualTapExampleActivity_imageView_gallery"
+        android:layout_below="@+id/VirtualTapExampleActivity_view_description" />
+
+</RelativeLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="unipi.luk3s.magnetotest.MainActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/IdentificationExampleActivity_title"
+            android:id="@+id/MainActivity_button_startIdentificationExampleActivity"
+            android:onClick="startSelectedActivity" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/PositionExampleActivity_title"
+            android:id="@+id/MainActivity_button_startPositionExampleActivity"
+            android:onClick="startSelectedActivity" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/LinearMotionExampleActivity_title"
+            android:id="@+id/MainActivity_button_startLinearMotionExampleActivity"
+            android:onClick="startSelectedActivity" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/VirtualTapExampleActivity_title"
+            android:id="@+id/MainActivity_button_startVirtualTapExampleActivity"
+            android:onClick="startSelectedActivity" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/RadialPositionExampleActivity_title"
+            android:id="@+id/MainActivity_button_startRadialPositionExampleActivity"
+            android:onClick="startSelectedActivity" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/RapidChangesExampleActivity_title"
+            android:id="@+id/MainActivity_button_startRapidMovementsExampleActivity"
+            android:onClick="startSelectedActivity" />
+
+        <TextView android:text="@string/MainActivity_extras"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/abc_text_size_large_material"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:gravity="center"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/DisplaySensorDataActivity_title"
+            android:id="@+id/MainActivity_button_startDisplaySensorDataActivity"
+            android:onClick="startSelectedActivity" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/CollectSensorDataActivity_title"
+            android:id="@+id/MainActivity_button_startCollectSensorDataActivity"
+            android:onClick="startSelectedActivity" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/RadialCubeActivity_title"
+            android:id="@+id/MainActivity_button_startRadialCubeActivity"
+            android:onClick="startSelectedActivity" />
+
+    </LinearLayout>
+
+</ScrollView>
